@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title fly
+        // fontAwesome
+        link(rel="stylesheet", href="css/all.min.css")
+        // Bootstrap
+        link(rel="stylesheet", href="css/bootstrap.min.css") 
+        // our Style
+        link(rel="stylesheet", href="css/style.css") 
+    body
+      //navbar
+      nav(class="navbar navbar-expand-lg navbar-light")
+          .container
+            a(class="navbar-brand", href="#")
+              img(src="imgs/logo.svg", alt="logo")
+            .bars-icon
+              span
+              span
+              span
+            div(class="collapse navbar-collapse", id="mymenu")
+              ul(class="navbar-nav ml-auto")
+                li(class="nav-item")
+                  span(class="nav-link", href="#features") features
+                    span
+                    span
+                li(class="nav-item")
+                  span(class="nav-link", href="#work") work
+                    span
+                    span
+                li(class="nav-item")
+                  span(class="nav-link", href="#team") team
+                    span
+                    span
+                li(class="nav-item")
+                  span(class="nav-link", href="#footer") subscribe
+                    span
+                    span
+      //Header
+      .header
+        img(src="imgs/bg-curvy-desktop.svg" alt="header-back")
+        img(src="imgs/bg-curvy-mobile.svg", class="back-mobile" alt="header-back")
+        // .overlay
+        .overlay
+        .container
+          .row.text-center
+            .col
+              .header-info
+                img(src="imgs/header-info.png", all="header-face", class="img-responsive")
+                .header-face-info
+                  h1 all your files in one secure location, accessible anywhere
+                  p fylo stores all your most important files in one secure location, access them whereever you need. share and collaborate with friends family, and col-workers
+                  button(class="btn btn-primary") get started
+      // Features
+      .features#features
+        .container.text-center
+          .row
+            .col-md-6
+              .feat-info.odd
+                img(src="imgs/feat-1.svg", alt="feat-img-1", class="img-responsive")
+                h4 access your files anywhere
+                p the ability to use a smartphone tablet or computer to access your account means your files follow you everywhere.
+            .col-md-6
+              .feat-info.even
+                img(src="imgs/feat-2.svg", alt="feat-img-1", class="img-responsive")
+                h4 security you can trust
+                p 2-factors autherication and user-controlled encryption are just a couple of the security feature we allow to help secure your file.
+            .col-md-6
+              .feat-info.odd
+                img(src="imgs/feat-3.svg", alt="feat-img-1", class="img-responsive")
+                h4 real-time collaboration
+                p securly share files and folders with friends and collegues for live collaboration. no email attatchments required.
+            .col-md-6
+              .feat-info.even
+                img(src="imgs/feat-4.svg", alt="feat-img-1", class="img-responsive")
+                h4 store any type of file
+                p whether you are sharing holidays photos or work documents, fylo has you covered allowing for all file types to be securly stored and shared
+      // OurWork
+      .work#work
+        .container
+          .row
+            .col-md-6.col-sm-12
+              .work-info
+                img(src="imgs/work.png", alt="work-face", class="img-responsive")
+            .col-md-6.col-sm-12
+              .work-info.work-info2
+                h2 stay productive, whereever you are
+                p never let location ba an issue when accessing your files, fylo has you covered for all of your filestorage needs.
+                p securely share files and folders with friends, family and collegues for live collaboration. no email attatchments required.
+                a(href="#") see how fylo works #[img(src="imgs/work-arrow.svg")]
+      // Our_Team
+      .team#team
+        .container
+          .row
+            .col-md-4
+              .customer.custleft
+                p fylo has improved our team productivly by an order of magnitude. since making the switch our team has become a well-oiled collaboration machine
+                .cust_pic
+                  img(src="imgs/team1.jpg" alt="pic")
+                  .cust_name
+                    h5 ahmed zaher
+                    p front end developer
+            .col-md-4
+              .customer.custmid
+                p fylo has improved our team productivly by an order of magnitude. since making the switch our team has become a well-oiled collaboration machine
+                .cust_pic
+                  img(src="imgs/team2.jpg" alt="pic")
+                  .cust_name
+                    h5 ali mohsen
+                    p back end developer
+            .col-md-4
+              .customer.custright
+                p fylo has improved our team productivly by an order of magnitude. since making the switch our team has become a well-oiled collaboration machine
+                .cust_pic
+                  img(src="imgs/team3.jpg" alt="pic")
+                  .cust_name
+                    h5 sara ahmed
+                    p ui/ux designer
+      // Footer
+      .footer#footer
+        .container
+          .row
+            .col.text-center
+              .before_footer
+                h3 get early access today
+                p it obly takes a minute to sign up and our free starter tier is extremely generous. if you have any question, our support team would be happy to help you
+                form
+                  input(type="email", class="form-control", placeholder="example@example.com")
+                  button(class="btn btn-primary",type="button") get started for free
+          .row
+            .col-md-12: img(src="imgs/logo.svg", alt="logo")
+            .col-md-3
+              .foot-info.location
+                img(src="imgs/icon-location.svg", alt="location")
+                span Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta reprehenderit commodi fugit id quos molestias maiores rerum quo blanditiis.
+            .col-md-3
+              .foot-info
+                .foot-info-group
+                  img(src="imgs/icon-phone.svg", alt="phone")
+                  span +20 012 8853 1988
+                .foot-info-group
+                  img(src="imgs/icon-email.svg", alt="email")
+                  span zaher.a59@yahoo.com
+            .col-md-3
+              .foot-info
+                ul.list-unstyled.list-mobile
+                  li: a(href="#") about us
+                  li: a(href="#") jobs
+                  li: a(href="#") press
+                  li: a(href="#") blog
+                ul.list-unstyled.list-mobile
+                  li: a(href="#") contact us
+                  li: a(href="#") terms
+                  li: a(href="#") privacy
+            .col-md-3
+              .foot-info
+                ul.list-unstyled.icons
+                  li: a(href="#"): i(class="fab fa-facebook-f")
+                  li: a(href="#"): i(class="fab fa-twitter")
+                  li: a(href="#"): i(class="fab fa-youtube")
+      // Footer_bottom
+      .footer-bottom
+        .container
+          .row.text-center
+            .col-md-12
+              h6 copyright @ 2020 by #[span Ahmed Zaher]
+      //Go To Top
+      .gotop
+        span
+      // jquery
+      script(src="js/jquery-1.12.0.min.js")
+      // popper for bootstrap
+      script(src="js/popper.min.js")
+      // bootstrap
+      script(src="js/bootstrap.min.js")
+      // our script
+      script(src="js/plugins.js")
